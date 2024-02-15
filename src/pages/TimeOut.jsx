@@ -17,7 +17,7 @@ const TimeOut = () => {
         setMinutes(59);
         setSeconds(59);
       }
-    }, 10000);
+    }, 1000);
     return () => clearInterval(interval);
   }, [hours, minutes, seconds]);
 
