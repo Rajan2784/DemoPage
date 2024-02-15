@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease forwards;
+  position: fixed;
+  bottom: 0;
+  left: 10%;
+  transform: translateX(-50%);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .offerEle{
+    display: flex;
+    flex-direction: column;
+  }
+  .left{
+    width: 100%;
+    border-bottom: 2px solid white;
+    padding-bottom: 4px;
+  }
+  .right{
+    width: 100%;
+  }
+}
